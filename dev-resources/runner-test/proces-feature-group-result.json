@@ -1,0 +1,93 @@
+[
+  {
+   "_id": "0003020000000001",
+  "aanduidingRecordInactief": "N",
+  "inOnderzoek": "N",
+  "hoofdadres": "0003200000140496",
+  "documentdatum": "20100720",
+  "aanduidingRecordCorrectie": "0",
+  "identificatie": "0003020000000001",
+  "_action": "new",
+  "postcode": null,
+  "begindatumTijdvakGeldigheid": "2010072000000000",
+  "_validity": "2010-07-20T00:00:00.000",
+  "ligplaatsStatus": "Plaats aangewezen",
+  "einddatumTijdvakGeldigheid": null,
+  "officieel": "N",
+  "_current_validity": null,
+  "_collection": "ligplaats",
+  "_geometry": {
+    "type": "gml",
+    "gml": "<gml:Polygon xmlns:gml=\"http://www.opengis.net/gml\" srsName=\"urn:ogc:def:crs:EPSG::28992\"><gml:exterior><gml:LinearRing><gml:posList count=\"8\" srsDimension=\"3\">252475.401 593758.074 0.0 252474.344 593760.335 0.0 252455.436 593751.494 0.0 252456.378 593749.18 0.0 252457.437 593746.915 0.0 252459.131 593743.291 0.0 252478.154 593752.186 0.0 252475.401 593758.074 0.0</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>"
+  },
+  "documentnummer": "FB 2010/LIG001"
+},
+  {
+    "_id": "0003020000000001",
+    "aanduidingRecordInactief": "N",
+    "inOnderzoek": "N",
+    "hoofdadres": "0003200000140496",
+    "documentdatum": "20100720",
+    "aanduidingRecordCorrectie": "0",
+    "identificatie": "0003020000000001",
+    "_action": "change",
+    "postcode": null,
+    "begindatumTijdvakGeldigheid": "2010072000000000",
+    "_validity": "2011-07-20T00:00:00.000",
+    "ligplaatsStatus": "Plaats aangewezen",
+    "einddatumTijdvakGeldigheid": null,
+    "officieel": "N",
+    "_current_validity": "2010-07-20T00:00:00.000",
+    "_collection": "ligplaats",
+    "_geometry": {
+      "type": "gml",
+      "gml": "<gml:Polygon xmlns:gml=\"http://www.opengis.net/gml\" srsName=\"urn:ogc:def:crs:EPSG::28992\"><gml:exterior><gml:LinearRing><gml:posList count=\"8\" srsDimension=\"3\">252475.401 593758.074 0.0 252474.344 593760.335 0.0 252455.436 593751.494 0.0 252456.378 593749.18 0.0 252457.437 593746.915 0.0 252459.131 593743.291 0.0 252478.154 593752.186 0.0 252475.401 593758.074 0.0</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>"
+    },
+    "documentnummer": "FB 2010/LIG001"
+  },
+  {
+    "_id": "0003020000000001",
+    "aanduidingRecordInactief": "N",
+    "inOnderzoek": "N",
+    "hoofdadres": "0003200000140496",
+    "documentdatum": "20100720",
+    "aanduidingRecordCorrectie": "0",
+    "identificatie": "0003020000000001",
+    "_action": "change",
+    "postcode": null,
+    "begindatumTijdvakGeldigheid": "2010072000000000",
+    "_validity": "2012-07-20T00:00:00.000",
+    "ligplaatsStatus": "Plaats aangewezen",
+    "einddatumTijdvakGeldigheid": null,
+    "officieel": "N",
+    "_current_validity": "2011-07-20T00:00:00.000",
+    "_collection": "ligplaats",
+    "_geometry": {
+      "type": "gml",
+      "gml": "<gml:Polygon xmlns:gml=\"http://www.opengis.net/gml\" srsName=\"urn:ogc:def:crs:EPSG::28992\"><gml:exterior><gml:LinearRing><gml:posList count=\"8\" srsDimension=\"3\">252475.401 593758.074 0.0 252474.344 593760.335 0.0 252455.436 593751.494 0.0 252456.378 593749.18 0.0 252457.437 593746.915 0.0 252459.131 593743.291 0.0 252478.154 593752.186 0.0 252475.401 593758.074 0.0</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>"
+    },
+    "documentnummer": "FB 2010/LIG001"
+  },
+  {
+    "_id": "0003020000000001",
+    "aanduidingRecordInactief": "N",
+    "inOnderzoek": "N",
+    "hoofdadres": "0003200000140496",
+    "documentdatum": "20100720",
+    "aanduidingRecordCorrectie": "0",
+    "identificatie": "0003020000000001",
+    "_action": "close",
+    "postcode": null,
+    "begindatumTijdvakGeldigheid": "2010072000000000",
+    "_validity": "2013-07-20T00:00:00.000",
+    "ligplaatsStatus": "Plaats aangewezen",
+    "einddatumTijdvakGeldigheid": null,
+    "officieel": "N",
+    "_current_validity": "2012-07-20T00:00:00.000",
+    "_collection": "ligplaats",
+    "_geometry": {
+      "type": "gml",
+      "gml": "<gml:Polygon xmlns:gml=\"http://www.opengis.net/gml\" srsName=\"urn:ogc:def:crs:EPSG::28992\"><gml:exterior><gml:LinearRing><gml:posList count=\"8\" srsDimension=\"3\">252475.401 593758.074 0.0 252474.344 593760.335 0.0 252455.436 593751.494 0.0 252456.378 593749.18 0.0 252457.437 593746.915 0.0 252459.131 593743.291 0.0 252478.154 593752.186 0.0 252475.401 593758.074 0.0</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>"
+    },
+    "documentnummer": "FB 2010/LIG001"
+  }]
