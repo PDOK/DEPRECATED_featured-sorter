@@ -1,6 +1,6 @@
 # featured-sorter
 
-FIXME: description
+Determines for unsorted JSON features collection for Featured the feature document order and metadata attributes so the collection can be processed by [featured] (https://github.com/PDOK/featured).
 
 ## Installation
 
@@ -8,9 +8,10 @@ Download from http://example.com/FIXME.
 
 ## Usage
 
-FIXME: explanation
+[LEININGEN] (https://leiningen.org/)
+    
+    lein run [source-dir] [target-dir]
 
-    $ java -jar featured-sorter-0.1.0-standalone.jar [args]
 
 ## Options
 
