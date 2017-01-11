@@ -1,4 +1,5 @@
 /target
+/releases
 /classes
 /checkouts
 pom.xml
@@ -9,3 +10,9 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
+/bin/
+.project
+.classpath
+.settings/
+.idea/
+*.iml
