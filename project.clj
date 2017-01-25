@@ -17,6 +17,10 @@
                  [org.clojure/tools.cli "0.3.3"]
                  [cheshire "5.6.3"]
                  [com.h2database/h2 "1.4.193"]
+                 [org.postgresql/postgresql "9.4.1209.jre7"]
+                 [org.clojure/tools.logging "0.3.1"]
+                 [log4j/log4j "1.2.17"]
+                 [nl.pdok/pdok-util "1.0-SNAPSHOT"]
                  [clj-time "0.12.2"]]
   :main ^:skip-aot featured-sorter.runner
   :target-path "target/%s"
