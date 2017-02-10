@@ -15,6 +15,7 @@
                  [org.clojure/java.jdbc "0.7.0-alpha1"]
                  [org.clojure/data.json "0.2.6"]
                  [org.clojure/tools.cli "0.3.3"]
+                 [org.clojure/core.async "0.2.395"]
                  [cheshire "5.6.3"]
                  [com.h2database/h2 "1.4.193"]
                  [org.postgresql/postgresql "9.4.1209.jre7"]
@@ -23,5 +24,6 @@
                  [nl.pdok/pdok-util "1.0-SNAPSHOT"]
                  [clj-time "0.12.2"]]
   :main ^:skip-aot featured-sorter.runner
+  :jvm-opts ["-Xmx2g"]
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
