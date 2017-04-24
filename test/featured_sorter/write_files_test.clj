@@ -1,7 +1,8 @@
 (ns featured-sorter.write-files-test
   (:require [clojure.test :refer :all]
             [featured-sorter.writer :refer :all]
-            [clojure.data.json :as json]))
+            [clojure.data.json :as json]
+            [featured-sorter.markers :as m]))
 
 (deftest strip-keys-from-features
   (testing "strip keys from a coll of maps"
@@ -16,7 +17,7 @@
   (testing "update a feature as new")
   (let [org-f (seq [{:_id 1 :_valid_from "2011"}])
         new-f (seq [{:_id 1 :_valid_from "2011" :_action "new" :_validity "2011"}])]
-    (is (= new-f (mark-new org-f)))))
+    (is (= new-f (m/mark-new org-f)))))
 
 (deftest mark-features-as-change
   (testing "update features as change")
@@ -24,7 +25,7 @@
                     {:_id 1 :_valid_from "2012"}])
         new-f (seq [{:_id 1 :_valid_from "2011" :_validity "2011" :_current_validity nil :_action "change"}
                     {:_id 1 :_valid_from "2012" :_validity "2012" :_current_validity "2011" :_action "change"}])]
-    (is (= new-f (mark-change org-f)))))
+    (is (= new-f (m/mark-change org-f)))))
 
 (deftest mark-features-as-new-or-change
   (testing "update features as new and change")
@@ -32,14 +33,14 @@
                     {:_id 1 :_valid_from "2012"}])
         new-f (seq [{:_id 1 :_valid_from "2011" :_validity "2011" :_current_validity nil :_action "new"}
                     {:_id 1 :_valid_from "2012" :_validity "2012" :_current_validity "2011" :_action "change"}])]
-    (is (= new-f (mark-new (mark-change org-f))))))
+    (is (= new-f (m/mark-new (m/mark-change org-f))))))
 
 (deftest mark-feature-as-close
   (testing "update a feature as a close")
   (let [org-f (seq [{:_id 1 :_valid_from "2011" :_valid_to "2012" :_action "change" :_validity "2011"}])
         new-f (seq [{:_id 1 :_valid_from "2011" :_valid_to "2012" :_action "change" :_validity "2011"}
                     {:_id 1 :_valid_from "2011" :_valid_to "2012" :_action "close" :_validity "2012" :_current_validity "2011"}])]
-    (is (= new-f (mark-close org-f)))))
+    (is (= new-f (m/mark-close org-f)))))
 
 (deftest group-by-ids
   (testing "remove features from coll that don't match with the given ids and group the rest by id")

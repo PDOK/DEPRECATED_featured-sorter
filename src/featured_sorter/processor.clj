@@ -14,6 +14,11 @@
 
 (def ^:dynamic *process-database*)
 
+
+
+(defn init-channels []
+  ())
+
 (defn file-splitter [in]
   (let [out (chan)]
     (go (while true (doseq [files (<! in)] (>! out files))))
@@ -64,3 +69,7 @@
       )
     )
   )
+
+(defn proces-file-from-upload [dataset version request]
+  (let [file (:tempfile (second (first (:params request))))]
+    (>!! in-chan file)))

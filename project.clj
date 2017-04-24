@@ -21,9 +21,22 @@
                  [org.postgresql/postgresql "9.4.1209.jre7"]
                  [org.clojure/tools.logging "0.3.1"]
                  [log4j/log4j "1.2.17"]
+                 [org.slf4j/slf4j-api "1.7.12"]
+                 [org.slf4j/slf4j-log4j12 "1.7.12"]
                  [nl.pdok/pdok-util "1.0-SNAPSHOT"]
-                 [clj-time "0.12.2"]]
+                 [clj-time "0.12.2"]
+                 [ring/ring-core "1.5.1"]
+                 [ring/ring-jetty-adapter "1.5.1"]
+                 [ring/ring-defaults "0.2.3"]
+                 [ring-json-response "0.2.0"]
+                 [ring/ring-json "0.4.0"]
+                 [org.clojure/data.json "0.2.6"]
+                 [compojure "1.5.0"]]
   :main ^:skip-aot featured-sorter.runner
   :jvm-opts ["-Xmx2g"]
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}}
+  :plugins [[lein-ring "0.11.0" ]]
+  :ring {:handler featured-sorter.api/api
+         :init featured-sorter.api/init!
+         :uberwar-name "featured-sorter.war"})
