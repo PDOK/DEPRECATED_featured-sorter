@@ -1,3 +1,5 @@
+# DEPRECATED
+
 # featured-sorter
 
 Determines for unsorted JSON features collection for Featured the feature document order and metadata attributes so the collection can be processed by [featured] (https://github.com/PDOK/featured).
